@@ -55,25 +55,30 @@ public sealed class StationJobsTest
 
 - type: job
   id: TAssistant
+  setPreference: true # Baseline
   playTimeTracker: PlayTimeDummyAssistant
 
 - type: job
   id: TMime
   weight: 20
+  setPreference: true # Baseline
   playTimeTracker: PlayTimeDummyMime
 
 - type: job
   id: TClown
   weight: -10
+  setPreference: true # Baseline
   playTimeTracker: PlayTimeDummyClown
 
 - type: job
   id: TCaptain
   weight: 10
+  setPreference: true # Baseline
   playTimeTracker: PlayTimeDummyCaptain
 
 - type: job
   id: TChaplain
+  setPreference: true # Baseline
   playTimeTracker: PlayTimeDummyChaplain
 ";
 
