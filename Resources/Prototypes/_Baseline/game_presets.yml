@@ -1,0 +1,21 @@
+- type: gamePreset
+  id: Secret
+  alias:
+    - secret
+    - sekrit
+  name: secret-title
+  showInVote: true
+  description: secret-description
+  rules:
+    - Secret
+
+- type: gamePreset
+  id: BaselineSandbox
+  alias:
+    - sandbox
+  name: sandbox-title
+  description: sandbox-description
+  showInVote: false
+  maxPlayers: 5
+  rules:
+    - Sandbox
