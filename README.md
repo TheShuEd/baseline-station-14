@@ -8,9 +8,7 @@ Many developers familiar with SS14 often want to create their own version of the
 1) Hard fork. Developers completely redesign the repository to suit their needs, removing unnecessary content and cutting out entire systems. This is effective, but causes problems with merge conflicts and sometimes engine version updates if the developers are inexperienced.
 2) Soft fork. Developers leave the original repository untouched, adding their content on top of SS14, hiding and filtering the original assets. This makes it easy to update by synchronizing with Upstream, but the process of filtering the original content is a fairly routine task, conceptually the same for any new project.
 
-Baseline offers a "starting point" for developing your unique project, in which all SS14 content is already safely hidden. At the same time, the repository has a minimum number of deviations from the original SS14 repository, which allows you to synchronize with Wizden updates without merge conflicts.
-
-Additionally, the project is adapted for dynamic localization changes by modifying the “ServerLanguage” CCVar, which allows you to change the language of the server and all connected clients on the fly.
+Baseline offers a starting point for the Soft fork approach for developing your unique project, in which all SS14 content is already safely hidden. At the same time, the repository has a minimum number of deviations from the original SS14 repository, which allows you to synchronize with Wizden updates without merge conflicts.
 
 ## How to use Baseline
 
