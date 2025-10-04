@@ -1,0 +1,10 @@
+- type: tile
+  id: BaselineTile
+  name: tiles-plating
+  sprite: /Textures/_Baseline/Tiles/tile.png
+  baseTurf: BaselineTile # Recursive indestructible
+  footstepSounds:
+    collection: FootstepPlating
+  friction: 1.5
+  heatCapacity: 10000
+  editorHidden: false
