@@ -126,5 +126,11 @@ namespace Content.Shared.Maps
         {
             TileId = id;
         }
+
+        /// <summary>
+        /// BASELINE - Vanilla tile filtering
+        /// </summary>
+        [DataField]
+        public bool EditorHidden { get; private set; } = true;
     }
 }
