@@ -2,7 +2,19 @@
   id: BaselineRole
   name: baseline-job-name-role
   description: baseline-job-desc-role
-  playTimeTracker: JobPassenger
-  startingGear: PassengerGear
+  playTimeTracker: BaselineRole
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
+  setPreference: true
+
+- type: playTimeTracker
+  id: BaselineRole
+
+- type: department
+  id: BaselineDepartment
+  name: baseline-department
+  description: baseline-department-description
+  color: "#A46106"
+  editorHidden: false
+  roles:
+  - BaselineRole
