@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.2.0
   forkId: ""
   forkVersion: ""
-  time: 10/04/2025 16:00:28
+  time: 10/04/2025 16:05:59
   entityCount: 63
 maps:
 - 1
@@ -76,7 +76,40 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,0:
+            0: 65535
+          0,-1:
+            0: 65535
+          -1,0:
+            0: 65535
+          0,1:
+            0: 15
+          -1,1:
+            0: 15
+          1,0:
+            0: 30583
+          1,1:
+            0: 7
+          1,-1:
+            0: 30583
+          -1,-1:
+            0: 65535
+          -2,0:
+            0: 65535
+          -2,1:
+            0: 15
+          -2,-1:
+            0: 65535
+        uniqueMixes:
+        - volume: 2500
+          temperature: 293.15
+          moles:
+            Oxygen: 21.824879
+            Nitrogen: 82.10312
         chunkSize: 4
+    - type: BecomesStation
+      id: Dev
     - type: GasTileOverlay
     - type: RadiationGridResistance
 - proto: BaselineLight
