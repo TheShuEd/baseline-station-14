@@ -1,0 +1,8 @@
+- type: job
+  id: BaselineRole
+  name: baseline-job-name-role
+  description: baseline-job-desc-role
+  playTimeTracker: JobPassenger
+  startingGear: PassengerGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
