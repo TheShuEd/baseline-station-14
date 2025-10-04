@@ -1,0 +1,6 @@
+- type: guideEntry
+  hidden: false
+  locFilter: "en-US"
+  id: Baseline_Welcome
+  name: Welcome to Baseline
+  text: "/ServerInfo/_Baseline/Guidebook_EN/Welcome.xml"

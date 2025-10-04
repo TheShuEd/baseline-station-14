@@ -46,4 +46,16 @@ public class GuideEntry
     ///     If the guide is the child of some other guide, the order simply determined by the order of children in <see cref="Children"/>.
     /// </summary>
     [DataField] public int Priority = 0;
+
+    /// <summary>
+    /// BASELINE - All vanilla guidebooks are hidden by default.
+    /// </summary>
+    [DataField]
+    public bool Hidden = true;
+
+    /// <summary>
+    /// BASELINE - Ability to disable guidebooks in the wrong language. Use "ru-RU" or "en-US" for example, check ContentLocalizationManager.Culture
+    /// </summary>
+    [DataField]
+    public string? LocFilter;
 }
