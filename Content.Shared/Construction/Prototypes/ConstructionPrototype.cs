@@ -13,7 +13,7 @@ public sealed partial class ConstructionPrototype : IPrototype
     ///     Hide from the construction list
     /// </summary>
     [DataField]
-    public bool Hide = false;
+    public bool Hide = true; //BASELINE - all vanilla craft recipes are hidden by default.
 
     /// <summary>
     ///     Friendly name displayed in the construction GUI.

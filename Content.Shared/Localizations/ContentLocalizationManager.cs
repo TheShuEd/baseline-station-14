@@ -46,8 +46,6 @@ namespace Content.Shared.Localizations
             if (!_loc.HasCulture(cultureEn))
                 _loc.LoadCulture(cultureEn);
             _loc.SetFallbackCluture(cultureEn); // I don't think there's any reason to change the fallback culture.
-            _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
-            _loc.AddFunction(cultureEn, "MANY", FormatMany);
 
             _cfg.OnValueChanged(CCVars.ServerLanguage, OnCultureUpdate, true);
         }
@@ -58,7 +56,6 @@ namespace Content.Shared.Localizations
             if (!_loc.HasCulture(culture))
                 _loc.LoadCulture(culture);
 
-            _loc.LoadCulture(culture);
             _loc.AddFunction(culture, "PRESSURE", FormatPressure);
             _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
             _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);
@@ -70,6 +67,8 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(culture, "NATURALFIXED", FormatNaturalFixed);
             _loc.AddFunction(culture, "NATURALPERCENT", FormatNaturalPercent);
             _loc.AddFunction(culture, "PLAYTIME", FormatPlaytime);
+
+            _loc.AddFunction(culture, "MANY", FormatMany); // TODO: Temporary fix for MANY() fluent errors. Remove after resolve errors.
 
             _loc.DefaultCulture = culture;
             _loc.ReloadLocalizations();
