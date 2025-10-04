@@ -430,7 +430,7 @@ namespace Content.IntegrationTests.Tests
                 }
 
                 mapSystem.DeleteMap(shuttleMap);
-                */ 
+                */
                 if (entManager.HasComponent<StationJobsComponent>(station))
                 {
                     // Test that the map has valid latejoin spawn points or container spawn points

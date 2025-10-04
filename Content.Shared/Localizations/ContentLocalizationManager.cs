@@ -12,9 +12,6 @@ namespace Content.Shared.Localizations
         [Dependency] private readonly ILocalizationManager _loc = default!;
         [Dependency] private readonly IConfigurationManager _cfg = default!;
 
-        // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
-
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
         /// </summary>
@@ -69,6 +66,7 @@ namespace Content.Shared.Localizations
             _loc.AddFunction(culture, "PLAYTIME", FormatPlaytime);
 
             _loc.AddFunction(culture, "MANY", FormatMany); // TODO: Temporary fix for MANY() fluent errors. Remove after resolve errors.
+            _loc.AddFunction(culture, "MAKEPLURAL", FormatMakePlural);
 
             _loc.DefaultCulture = culture;
             _loc.ReloadLocalizations();
@@ -171,7 +169,6 @@ namespace Content.Shared.Localizations
         /// </summary>
         public static string FormatPlaytime(TimeSpan time)
         {
-            time = TimeSpan.FromMinutes(Math.Ceiling(time.TotalMinutes));
             var hours = (int)time.TotalHours;
             var minutes = time.Minutes;
             return Loc.GetString($"zzzz-fmt-playtime", ("hours", hours), ("minutes", minutes));
